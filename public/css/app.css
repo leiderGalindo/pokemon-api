@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Inicio configuracion scroll */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 7px;
+}
+
+.cr-slider {
+    border: none !important;
+}
+
+/* Fin configuracion scroll */
+
+html,
+body,
+#app,
+main {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+    background-color: #1c1c25;
+    height: 100%;
+    font-size: 14px;
+    color: #fff;
+    overflow: hidden;
+}
+
+main {
+    padding: 5px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-x: hidden !important;
+    position: relative;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.btn {
+    border-radius: 7px;
+}
+
+.containerSection {
+    width: 100% !important;
+    margin-left: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.containerTopBar {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    border-radius: 8px;
+    filter: blur(.2px);
+    border: 0;
+    padding: 10px 5px 10px 20px !important;
+    font-size: 18px;
+    color: #fff;
+    z-index: 99;
+}
+
+.ContainerSectionBody {
+    height: calc(100% - 80px);
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px !important;
+}
+
+.containerTopBar .logo {
+    width: 160px;
+}
+
+.InputSearch {
+    padding-left: 40px;
+    background-color: rgba(255, 255, 255, .2);
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    height: 70%;
+    width: 100%;
+}
+
+.iconSearch {
+    position: absolute;
+    left: 10px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.ContainerListPokemons{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 80px;
+}
+
+.pokemon-preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardPreviewPokemon {
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 7px;
+    position: relative;
+    width: 100%;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.pokemon-preview:hover .cardPreviewPokemon {
+    transform: scale(1.1);
+}
+
+.cardPreviewPokemon .image{
+    height: 150px;
+}
+.cardPreviewPokemon img{
+    width: 100%;
+    position: absolute;
+    top: -50%;
+}
